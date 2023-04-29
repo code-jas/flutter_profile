@@ -12,15 +12,18 @@ class _PortfolioState extends State<Portfolio> {
   // define a list of data for each container
   final List<Map<String, String>> _data = [
     {
-      'image': 'assets/images/bike.jpg',
+      'image': 'assets/images/portfolio/bookly_mockup_transparent.png',
+      'title': 'Bookly',
       'details': 'Lorem ipsum Details sdlkfjd;lkfjsa More Details',
     },
     {
-      'image': 'assets/images/cooking.jpg',
+      'image': 'assets/images/portfolio/phfestival_mockup_transparent.png',
+      'title': 'PH Festival',
       'details': 'Lorem ipsum Details sdlkfjd;lkfjsa More Details',
     },
     {
-      'image': 'assets/images/pet.jpg',
+      'image': 'assets/images/portfolio/alpas_mockup_transparent.png',
+      'title': 'Alpas',
       'details': 'Lorem ipsum Details sdlkfjd;lkfjsa More Details',
     },
     // add more data for additional containers
@@ -43,6 +46,14 @@ class _PortfolioState extends State<Portfolio> {
               final containersData = _data.sublist(startIndex, endIndex);
               return Column(
                 children: [
+                  const Text(
+                    'Portfolio',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.textColor,
+                    ),
+                  ),
                   for (final containerData in containersData)
                     Column(
                       children: [
@@ -76,9 +87,9 @@ class _PortfolioState extends State<Portfolio> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text(
-                              'Portfolio',
-                              style: TextStyle(
+                            Text(
+                              containerData['title']!,
+                              style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
                                 color: AppColors.textColor,
