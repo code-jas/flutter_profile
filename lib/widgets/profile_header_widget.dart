@@ -1,7 +1,6 @@
 // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/app_colors.dart';
-import 'package:flutter_profile/data/data.dart';
 
 Widget profileHeaderWidget(BuildContext context) {
   return Container(
