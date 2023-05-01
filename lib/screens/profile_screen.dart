@@ -48,11 +48,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
               //   // ignore: avoid_print
               //   onPressed: () => print("Add"),
               // ),
-              IconButton(
-                icon: const Icon(Icons.menu, color: AppColors.textColor),
-                // ignore: avoid_print
-                onPressed: () => print("Menu"),
-              )
+              // IconButton(
+              //   icon: const Icon(Icons.menu, color: AppColors.textColor),
+              //   // ignore: avoid_print
+              //   onPressed: () => print("Menu"),
+              // )
             ],
           ),
         ),
