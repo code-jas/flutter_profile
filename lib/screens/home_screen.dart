@@ -61,15 +61,16 @@ class _HomeScreenState extends State<HomeScreen> {
         child: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.movie),
               label: 'Movies',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.open_in_new_rounded),
+              icon: Icon(Icons.location_on_rounded),
               label: 'Location',
             ),
           ],
           currentIndex: _selectedIndex,
+          selectedIconTheme: const IconThemeData(size: 30),
           unselectedItemColor: AppColors.textColor,
           selectedFontSize: 0,
           elevation: 0,
